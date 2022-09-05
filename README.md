@@ -19,4 +19,4 @@ To train or test a model by:
         python train.py
         
 # Acknowledgement
-The code is built on PointNet++ / DGCNN / AdaptConv. We thank the authors for shaaring the codes.
+The code is built on PointNet++ / DGCNN / AdaptConv. We thank the authors for sharing the codes.
