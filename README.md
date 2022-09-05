@@ -9,7 +9,7 @@ The code has been tested on one configuration:
 Please refer to AdaptConv / DGCNN to install other required packages.
 
 # Data
-Please download the ModelNet40 and ScanObjectNN datasets and place them to cls/data/datasets.
+Please download the ModelNet40 and ScanObjectNN datasets and place them to      cls/data/datasets.
 
 # Usage
 To train or test a model by:
