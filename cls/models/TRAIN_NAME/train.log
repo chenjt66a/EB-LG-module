@@ -1,0 +1,8 @@
+Namespace(Tmax=250, batch_size=32, dataset='modelnet40', dropout=0.5, emb_dims=1024, epochs=500, eval=True, gpu_idx=[0], k=20, lr=0.001, model='pointnet2_cls_ssg', model_name='DgcnnEBLG', model_path='', momentum=0.9, name='TRAIN_NAME', num_points=1024, seed=1, test_batch_size=16, use_sgd=True)
+********** TEST STAGE **********
+Reload best epoch:
+Test :: test acc: 0.926256, test avg acc: 0.906581
+Namespace(Tmax=250, batch_size=32, dataset='modelnet40', dropout=0.5, emb_dims=1024, epochs=500, eval=True, gpu_idx=[0], k=20, lr=0.001, model='pointnet2_cls_ssg', model_name='DgcnnEBLG', model_path='', momentum=0.9, name='TRAIN_NAME', num_points=1024, seed=1, test_batch_size=16, use_sgd=True)
+********** TEST STAGE **********
+Reload best epoch:
+Test :: test acc: 0.926256, test avg acc: 0.906581

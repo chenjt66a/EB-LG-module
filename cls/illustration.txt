@@ -1,0 +1,35 @@
+AdaptConv+EB-LG:
+
+	on ModelNet40:
+	 k5:  model.adapt_modelnet_k5---------------------->92.990%OA / 89.890%mAcc
+	k10:  model.adapt_modelnet_k10--------------------->93.679%OA / 90.994%mAcc
+	k20:  model.adapt_modelnet_k20--------------------->93.517%OA / 91.232%mAcc
+	k40:  model.adapt_modelnet_k40--------------------->93.314%OA / 90.319%mAcc
+     2048ps:  model.adapt_modelnet_k20_2048ps------------------------>93.922%OA / 91.394%mAcc
+	
+	on ScanObjectNN:
+	k10:  model.adapt_scanobjnn_k10------------------->80.256%OA / 76.822%mAcc
+	k20:  mdoel.adapt_scanobjnn_k20------------------->80.950%OA / 77.983%mAcc
+     2048ps:  model.adapt_scanobjnn_k20_2048ps--------------------->82.095%OA / 79.538%mAcc
+
+DGCNN+EB-LG:
+
+	on ModelNet40:
+	 k5:  model.dgcnn_modelnet_k5----------------------->93.192%OA / 90.350%mAcc
+	k10:  model.dgcnn_modelnet_k10---------------------->93.598%OA / 90.974%mAcc
+	k20:  model.dgcnn_modelnet_k20---------------------->93.233%OA / 90.769%mAcc
+	k40:  model.dgcnn_modelnet_k40---------------------->93.030%OA / 89.856%mAcc
+     2048ps:  model.dgcnn_modelnet_k20_2048ps---------------------->93.881%OA / 91.348%mAcc
+
+	on ScanObjectNN:
+	k10:  mdoel.dgcnn_scanobjnn_k10------------------->82.026%OA / 79.207%mAcc
+	k20:  model.dgcnn_scanobjnn_k20------------------->81.332%OA / 78.575%mAcc
+     2048ps:  model.dgcnn_scanobjnn_k20_2048ps---------------------->83.240%OA / 80.566%mAcc
+
+PointNet2+EB-LG:
+
+    	on ModelNet40:
+     	model.pn2_modelnet--------------------->92.625%OA / 90.658%mAcc
+
+     	on ScanObjectNN:
+    	model.pn2_scanobjnn---------------------->80.360%OA / 77.088%mAcc
