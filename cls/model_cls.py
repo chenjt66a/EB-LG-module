@@ -132,25 +132,6 @@ def EditedByLG(x, conva, convb):
     return edited_x
 
 
-def EB_only(x, conva, convb):
-
-    x1 = conva(x)  # 32 * 64 * 1024 --> 32 * 64 * 1024
-    error_feature = x1 - x  # 32 * 64 * 1024
-    error_feature = convb(error_feature)  # 32 * 64 * 1024 --> 32 * 64 * 1024
-    edited_x = x + error_feature  # 32 * 64 * 1024
-
-    return edited_x
-
-
-def LG_only(x, conva):
-    x_hat = x.transpose(1, 2).contiguous()  # 32 * 1024 * 64
-    glocal_feature = torch.max(x, dim=-1, keepdim=False)[0]  # 32 * 64
-    local_global_feature = global_cat(x_hat, glocal_feature)  # 32 * 1024 * 128
-    edited_x = LG_feature_module(conva, local_global_feature)  # 32 * 64 *  1024
-
-    return edited_x
-
-
 # AdaptConv+EB-LG
 class AdaptEBLG(nn.Module):
     def __init__(self, args, output_channels=40):
